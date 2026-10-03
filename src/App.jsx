@@ -2,12 +2,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Hero from "./components/Hero";
+import FeaturedCategories from "./components/FeaturedCategories";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Hero/>
-
+        <FeaturedCategories />
+        
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
         <Route path="/shop" element={<h1>Shop</h1>} />
